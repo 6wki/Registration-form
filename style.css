@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.color {
+    color: #051923;
+}
+
+body {
+    background-color: #ced4da;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Utilities */
+
+.gradienHabibi {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+p {
+    font-weight: 700;
+}
+
+/* Container */
+
+.container {
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px -2px;
+}
+
+
+.register {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+}
+
+.firstForm {
+    margin: 30px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.registration {
+    height: 50px;
+    width: 100%;
+    border: 0.5px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.details {
+    width: 47%;
+    margin: 10px 0;
+}
+
+.details input {
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+.chkon-nta {
+    display: none;
+}
+
+.inputs label {
+    margin-right: 120px;
+    display: flex;
+    cursor: pointer;
+}
+
+.inputs {
+    margin: 30px 0;
+    display: flex;
+}
+
+.gender {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d9d9d9;
+}
+
+.chkon-nta:checked + .gender {
+    background-color: #666769;
+}
+
+.button {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #fa7099c8 0%, #fee140be 100%);
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        height: 100%;
+        width: 100vw;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .register {
+        align-items: center;
+    }
+    
+    .line {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .firstForm {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .secondForm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .details {
+        width: 100%;
+        margin: 0;
+    }
+
+    .button {
+        width: 50%;
+    }
+
+    .inputs label {
+        margin-bottom: 10px;
+    
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+}
